@@ -93,7 +93,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url("https://icons.veryicon.com/png/o/miscellaneous/ifont/checked-9.png");
+    background-image: url("");
 }
 
 li span{

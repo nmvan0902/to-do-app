@@ -53,7 +53,7 @@ input{
 }
 
 
-button{
+.addButton{
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -67,44 +67,37 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(../images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
+.content-todo{
+    display: flex;
 }
 
-ul li.checked{
+.checked{
     color: #555;
     text-decoration: line-through;
 }
 
-ul li.checked::before{
-    background-image: url("https://icons.veryicon.com/png/o/miscellaneous/ifont/checked-9.png");
+li img{
+    width: 28px;
+    height: 28px;
 }
 
-li span{
-    position: absolute;
-    right: 0;
-    width: 20px;
-    height: 20px;
+.deleteButton{
+    width: 28px;
+    height: 28px;
     text-align: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
-li span:hover{
-    background-color: #bbb6b6;
-    color: white;
+.deleteButton:hover{
+    background-color: #bbbbbb;
+    color: #edeef0;
 }
